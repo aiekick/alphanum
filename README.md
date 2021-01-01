@@ -5,6 +5,22 @@ This readme is a copy of the page http://davekoelle.com/alphanum.html
 People sort strings with numbers differently than software does. 
 Most sorting algorithms compare ASCII values, which produces an ordering that is inconsistent with human logic. Here's how to fix it. 
 
+### Download the algorithm
+Java: AlphanumComparator.java
+C#: AlphanumComparator.cs
+C++: alphanum.cpp
+C++, not Windows dependent: alphanum.hpp
+JavaScript: alphanum.js
+Perl: alphanum.pl
+Python: alphanum.py
+Python 2.4+: alphanum.py_v2.4
+Ruby: alphanum.rb
+Other: OCaml, Lua, Groovy
+PHP: Just use sort(&array, SORT_STRING);
+License: MIT License - Free to use and distribute
+Special thanks to everyone who contributed fixes or new code!
+Use at your own risk... I can personally vouch only for the Java version
+
 ## The Problem
 
 Look at most sorted list of filenames, product names, or any other text that contains alphanumeric characters - both letters and numbers. Traditional sorting algorithms use ASCII comparisons to sort these items, which means the end-user sees an unfortunately ordered list that does not consider the numeric values within the strings.
