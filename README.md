@@ -5,7 +5,8 @@ This readme is a copy of the page http://davekoelle.com/alphanum.html
 People sort strings with numbers differently than software does. 
 Most sorting algorithms compare ASCII values, which produces an ordering that is inconsistent with human logic. Here's how to fix it. 
 
-### Download the algorithm
+### the available algorithms implmentations :
+
   * Java: AlphanumComparator.java
   * C#: AlphanumComparator.cs
   * C++: alphanum.cpp
@@ -15,7 +16,9 @@ Most sorting algorithms compare ASCII values, which produces an ordering that is
   * Python: alphanum.py
   * Python 2.4+: alphanum.py_v2.4
   * Ruby: alphanum.rb
-  * Other: OCaml, Lua, Groovy
+  * Ocaml: alphanum.oCaml
+  * lua : alphanum.lua
+  * Groovy : alphanum.groovy
   * PHP: Just use sort(&array, SORT_STRING);
   
 License: MIT License - Free to use and distribute
