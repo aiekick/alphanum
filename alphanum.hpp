@@ -294,13 +294,17 @@ namespace doj
      Algorithm". If the objects are no std::string, they must
      implement "std::ostream operator<< (std::ostream&, const Ty&)".
   */
+  // fix for c++17 : https://stackoverflow.com/questions/57236763/how-to-change-binary-function-to-c17-code
   template<class Ty>
-  struct alphanum_less : public std::binary_function<Ty, Ty, bool>
+  struct alphanum_less// : public std::binary_function<Ty, Ty, bool>
   {
-    bool operator()(const Ty& left, const Ty& right) const
-    {
-      return alphanum_comp(left, right) < 0;
-    }
+      typedef Ty first_argument_type;
+      typedef Ty second_argument_type;
+      typedef bool result_type;
+      bool operator()(const Ty& left, const Ty& right) const
+      {
+          return alphanum_comp(left, right) < 0;
+      }
   };
 
 }
